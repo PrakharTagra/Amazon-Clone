@@ -1,0 +1,365 @@
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <link rel="stylesheet" href="Clone.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>
+            Amazon 
+        </title>
+    </head>
+    <body>
+        <div id="loader"></div>
+        <header>
+            <div class="navbar">
+                <a href="Homepage.html" class="logo1"><img src="logo.png" class="logo"></a>
+                <div class="location h">
+                    <table class="loc">
+                        <tr class="loc1">
+                            <td rowspan="2"><i class="fa-solid fa-location-dot fa-lg"></i></td>
+                            <td>Delivering To:</td>
+                        </tr>
+                        <tr class="loc1">
+                            <td>
+                                <select name="country" class="loc2">
+                                    <option>Australia</option>
+                                    <option>Belgium</option>
+                                    <option>Brazil</option>
+                                    <option>Canada</option>
+                                    <option>China</option>
+                                    <option>Egypt</option>
+                                    <option>France</option>
+                                    <option>Germany</option>
+                                    <option>India</option>
+                                    <option>Italy</option>
+                                    <option>Japan</option>
+                                    <option>Mexico</option>
+                                    <option>Netherlands</option>
+                                    <option>Poland</option>
+                                    <option>Saudi Arabia</option>
+                                    <option>Singapore</option>
+                                    <option>Spain</option>
+                                    <option>Sweden</option>
+                                    <option>Turkey</option>
+                                    <option>United Arab Emirates</option>
+                                    <option>United Kingdom</option>
+                                    <option>United States</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    </div>
+                    <div class="search">
+                        <select name="categories" class="cat">
+                            <option value=" " disabled selected style="text-align: center;">All</option>
+                            <option>All Categories</option>
+                            <option>Alexa Skills</option>
+                            <option>Amazon Devices</option>
+                            <option>Amazon Fashion</option>
+                            <option>Amazon Fresh</option>
+                            <option>Amazon Pharmacy</option>
+                            <option>Appliances</option>
+                            <option>Apps & Games</option>
+                            <option>Audible Audiobooks</option>
+                            <option>Baby</option>
+                            <option>Beauty</option>
+                            <option>Books</option>
+                            <option>Car & Motorbike</option>
+                            <option>Clothing & Accessories</option>
+                            <option>Collectibles</option>
+                            <option>Computers & Accessories</option>
+                            <option>Deals</option>
+                            <option>Electronics</option>
+                            <option>Furniture</option>
+                            <option>Garden & Outdoors</option>
+                            <option>Gift Cards</option>
+                            <option>Grocery & Gourmet Foods</option>
+                            <option>Health & Personal Care</option>
+                            <option>Home & Kitchen</option>
+                            <option>Industrial & Scientific</option>
+                            <option>Jewellery</option>
+                            <option>Kindle Store</option>
+                            <option>Luggage & Bags</option>
+                            <option>Luxury Beauty</option>
+                            <option>Movies & TV Shows</option>
+                            <option>MP3 Music</option>
+                            <option>Music</option>
+                            <option>Musical Instruments</option>
+                            <option>Office Products</option>
+                            <option>Pet Supplies</option>
+                            <option>Prime Video</option>
+                            <option>Shoes & Handbags</option>
+                            <option>Software</option>
+                            <option>Sports, Fitness & Outdoors</option>
+                            <option>Subscribe & Save</option>
+                            <option>Tools & Home Improvement</option>
+                            <option>Toys & Games</option>
+                            <option>Under ₹500</option>
+                            <option>Video Games</option>
+                            <option>Watches</option>
+                        </select>
+                        <input type="text" placeholder="Search Amazon" class="input">
+                        <button class="searchbutton"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+                    </div>
+                    <div class="lang h">
+                        <img src="india.png" class="flag">
+                        <select name="language" class="lang1">
+                            <option>हिन्दी</option>
+                            <option>Deutsch</option> <!-- German -->
+                            <option>English</option>
+                            <option>Español</option> <!-- Spanish -->
+                            <option>Français</option> <!-- French -->
+                            <option>Italiano</option> <!-- Italian -->
+                            <option>日本語</option> <!-- Japanese -->
+                            <option>Português</option> <!-- Portuguese -->
+                            <option>中文 (简体)</option> <!-- Chinese Simplified -->
+                            <option>中文 (繁體)</option> <!-- Chinese Traditional -->
+                            <option>한국어</option> <!-- Korean -->
+                            <option>हिन्दी</option> <!-- Hindi -->
+                            <option>தமிழ்</option> <!-- Tamil -->
+                            <option>తెలుగు</option> <!-- Telugu -->
+                            <option>বাংলা</option> <!-- Bengali -->
+                            <option>मराठी</option> <!-- Marathi -->
+                            <option>മലയാളം</option> <!-- Malayalam -->
+                            <option>ਪੰਜਾਬੀ</option> <!-- Punjabi -->
+                            <option>اردو</option> <!-- Urdu -->
+                            <option>العربية</option> <!-- Arabic -->
+                            <option>Nederlands</option> <!-- Dutch -->
+                            <option>Polski</option> <!-- Polish -->
+                            <option>Türkçe</option> <!-- Turkish -->
+                            <option>עברית</option> <!-- Hebrew (used on Amazon Global/Intl, not full site) -->
+                        </select>
+                    </div>
+                    <div class="acul">
+                        <ul class="accounts h">
+                            <li class="hello">Hello,sign in</li>
+                            <li style="font-size: 15px;font-weight: bolder;">Account & Lists <i class="fa-solid fa-angle-down fa-xs"></i> </li>
+                        </ul>
+                        <div class="accwish">
+                            <table>
+                                    <tr>
+                                    <th style="text-align: left;width: 167px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Your Lists</th>
+                                    <th style="text-align: left;width: 166px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" class="acct">Your Account</th>
+                                <tr class="accrow">
+                                    <td><a href="#" class="wish">Create a Wish List</a></td>
+                                    <td class="acct"><a href="#"class="wish">Your Account</a></td>
+                                </tr>
+                                <tr class="accrow">
+                                    <td><a href="#"class="wish">Wish from Any Website</a></td>
+                                    <td class="acct"><a href="#"class="wish">Your Orders</a></td>
+                                </tr>
+                                <tr class="accrow">
+                                    <td><a href="#"class="wish">Baby Wishlist</a></td>
+                                    <td class="acct"><a href="#"class="wish">Your Wish List</a></td>
+                                </tr>
+                                <tr class="accrow">
+                                    <td><a href="#"class="wish">Discover Your Style</a></td>
+                                    <td class="acct"><a href="#"class="wish">Your Recommendations</a></td>
+                                </tr>
+                                <tr class="accrow">
+                                    <td><a href="#"class="wish">Explore Showroom</a></td>
+                                    <td class="acct"><a href="#"class="wish">Your Prime Membership</a></td>
+                                </tr>
+                                <tr class="accrow">
+                                    <td></td>
+                                    <td class="acct"><a href="#"class="wish">Your Prime Video</a></td>
+                                </tr>
+                                <tr class="accrow">
+                                    <td></td>
+                                    <td class="acct"><a href="#"class="wish">Your Subscribe & Save Items</a></td>
+                                </tr>
+                                <tr class="accrow">
+                                    <td></td>
+                                    <td class="acct"><a href="#"class="wish">Memberships & Subscriptions</a></td>
+                                </tr>
+                                <tr class="accrow">
+                                    <td></td>
+                                    <td class="acct"><a href="#"class="wish">Your Seller Account</a></td>
+                                </tr>
+                                <tr class="accrow">
+                                    <td></td>
+                                    <td class="acct"><a href="#"class="wish">Manage Your Content and Devices</a></td>
+                                </tr>
+                                <tr class="accrow">
+                                    <td></td>
+                                    <td class="acct"><a href="#"class="wish">Register for a free Business Account</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                        <ul class="returns h">
+                            <li class="hello">Returns</li>
+                            <li style="font-size: 15px;font-weight: bolder;">& Orders</li>
+                        </ul>
+                        <div class="cart h">
+                            <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+                            <p style="margin: 0%;padding: 0%;font-size: 13px;">Cart</p>
+                        </div>
+            </div>
+            <div class="nav2">
+                <ul class="nav2ul">
+                    <div class="all"><li><a href="#" class="nav2li"><i class="fa-solid fa-bars"></i>&nbsp;All</a></li>
+                    <div class="menu">
+                        <h3 class="sign"> <i class="fa-solid fa-user"></i>&nbsp&nbsp&nbsp&nbspHello, Sign in</h3>
+                        <ul class="menu1">
+                            <li><h4>Trending</h4></li>
+                            <li>Bestsellers</li>
+                            <li>New Releases</li>
+                            <li>Movers and Shakers</li>
+                        </ul>
+                        <ul class="menu1">
+                            <li><h4>Digital Content and Devices</h4></li>
+                            <li>Echo and Alexa</li>
+                            <li>Fire Tv</li>
+                            <li>Kindle eReaders & eBooks</li>
+                            <li>Audible Audiobooks</li>
+                            <li>Amazon Prime Video</li>
+                            <li>Amazon Prime Music</li>
+                        </ul>
+                    </div>
+                    </div>
+                    <li><a href="#"class="nav2li h">Fresh</a></li>
+                    <li><a href="#"class="nav2li h">Mx Player</a></li>
+                    <li><a href="#" class="nav2li h">Sell</a></li>
+                    <li><a href="#"class="nav2li h">Bestsellers</a></li>
+                    <li><a href="#"class="nav2li h">Mobiles</a></li>
+                    <li><a href="#"class="nav2li h">Today's Deals</a></li>
+                    <li><a href="#"class="nav2li h">Prime <i class="fa-solid fa-angle-down fa-xs"></i></a></li>
+                    <li><a href="#"class="nav2li h">Customer Service</a></li>
+                    <li><a href="#"class="nav2li h">New Releases</a></li>
+                    <li><a href="#"class="nav2li h">Electronics</a></li>
+                    <li><a href="#"class="nav2li h">Amazon Pay</a></li>
+                    <li><a href="#"class="nav2li h">Fashion</a></li>
+                    <li><a href="#"class="nav2li h">Home & Kitchen</a></li>
+                    <li><a href="#"class="nav2li h">Computers</a></li>
+                </ul>
+            </div>
+            <div class="spacer">
+            </div>
+        </header>
+        <main>
+            <div class="banner-wrapper">
+                <div class="banner">
+                    <div class="banner1 b1">
+                    </div>
+                    <div class="banner2 b2">
+                    </div>
+                    <div class="banner3 b3">
+                    </div>
+                    <div class="banner4 b4">
+                    </div>
+                    <div class="banner1 b1">
+                    </div>
+                </div>
+            </div>
+            <div class="dots">
+                <div class="d1"></div>
+                <div class="d2"></div>
+                <div class="d3"></div>
+                <div class="d4"></div>
+            </div>
+            <div class="hero">
+            <div class="onerow">
+            <div class="box1 box">
+            <h2>Electronics</h2>
+            <img src="B1.png" alt="Electronics" class="boximg">
+            <ul>
+            <li><a href="#">Mobiles</a></li>
+            <li><a href="#">Laptops</a></li>
+            <li><a href="#">Cameras</a></li>
+            </ul>
+            <a href="#">See more</a>
+            </div>
+
+            <div class="box2 box">
+            <h2>Fashion</h2>
+            <img src="FASHION.png" alt="Fashion" class="boximg">
+            <ul>
+            <li><a href="#">Men’s Clothing</a></li>
+            <li><a href="#">Women’s Wear</a></li>
+            <li><a href="#">Footwear</a></li>
+            </ul>
+            <a href="#">See more</a>
+            </div>
+
+            <div class="box3 box">
+            <h2>Home & Kitchen</h2>
+            <img src="HANDK.png" alt="Home & Kitchen" class="boximg">
+            <ul>
+            <li><a href="#">Furniture</a></li>
+            <li><a href="#">Decor</a></li>
+            <li><a href="#">Appliances</a></li>
+            </ul>
+            <a href="#">See more</a>
+            </div>
+
+            <div class="box4 box">
+            <h2>Books</h2>
+            <img src="BOOKS.png" alt="Books" class="boximg">
+            <ul>
+            <li><a href="#">Novels</a></li>
+            <li><a href="#">Comics</a></li>
+            <li><a href="#">Stationery</a></li>
+            </ul>
+            <a href="#">See more</a>
+            </div>
+            </div>
+
+            <div class="tworow">
+            <div class="box5 box">
+            <h2>Beauty & Health</h2>
+            <img src="HANDB.png" alt="Beauty" class="boximg">
+            <ul>
+            <li><a href="#">Skincare</a></li>
+            <li><a href="#">Makeup</a></li>
+            <li><a href="#">Healthcare</a></li>
+            </ul>
+            <a href="#">See more</a>
+            </div>
+
+            <div class="box6 box">
+            <h2>Sports</h2>
+            <img src="S.png" alt="Sports" class="boximg">
+            <ul>
+            <li><a href="#">Gym Equipment</a></li>
+            <li><a href="#">Outdoor Games</a></li>
+            <li><a href="#">Sportswear</a></li>
+            </ul>
+            <a href="#">See more</a>
+            </div>
+
+            <div class="box7 box">
+            <h2>Toys & Baby</h2>
+            <img src="TANDB.png" alt="Toys" class="boximg">
+            <ul>
+            <li><a href="#">Educational Toys</a></li>
+            <li><a href="#">Action Figures</a></li>
+            <li><a href="#">Baby Essentials</a></li>
+            </ul>
+            <a href="#">See more</a>
+            </div>
+
+            <div class="box8 box">
+            <h2>Groceries</h2>
+            <img src="GROCERIES.png" alt="Groceries" class="boximg">
+            <ul>
+            <li><a href="#">Snacks</a></li>
+            <li><a href="#">Beverages</a></li>
+            <li><a href="#">Daily Needs</a></li>
+            </ul>
+            <a href="#">See more</a>
+            </div>
+            </div>
+            </div>
+        </main>
+        <div class="bottom-section">
+            <h3>Shop smarter, shop faster</h3>
+            <p>Discover amazing deals every day and explore our wide range of categories.</p>
+            <a href="#" class="bottom-btn">Start Shopping</a>
+        </div>
+        <footer>
+            <p>&copy; 2025 YourStore. All rights reserved.</p>
+        </footer>
+    <script src="clone.js"></script>
+    </body>
+</html>
