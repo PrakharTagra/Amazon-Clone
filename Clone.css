@@ -503,60 +503,53 @@ footer {
   font-size: 0.9rem;
 }
 
-/* 📱 Mobile (0–700px) */
 @media screen and (max-width: 700px) {
+  .logo{
+    height: 70%;
+    width: 15%;
+    position: absolute;
+    left: 0%;
+    top: 15%;
+  }
   .navbar {
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
+    height: 8vh;
     padding: 10px;
   }
-
   .logo1 {
     margin-bottom: 10px;
   }
-
   .search {
-    width: 100%;
-    margin: 8px 0;
+    width: 60%;
     display: flex;
   }
-
   .cat {
     width: 25%;
     font-size: 0.8rem;
   }
-
   .input {
     width: 60%;
   }
-
   .searchbutton {
     width: 15%;
   }
-
-  /* Hide some non-essential items on mobile */
   .location,
   .lang,
   .accounts,
   .returns {
     display: none;
   }
-
   .cart {
     align-self: flex-end;
-    margin-top: 10px;
+    position: absolute;
+    right: 0;
+    top: 35%;
   }
-
   .nav2ul {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
   }
 }
-
-/* 📲 Tablet (700–1000px) */
 @media screen and (min-width: 701px) and (max-width: 1000px) {
   .navbar {
     flex-wrap: wrap;
