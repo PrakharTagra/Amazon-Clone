@@ -91,12 +91,12 @@ d4.addEventListener("click",()=>{
     d3.style.backgroundColor="white";
     d4.style.backgroundColor="gray";
 })
-  window.addEventListener("load", () => {
-    setTimeout(() => {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("content").style.display = "block";
-    }, 1000);
-  });
+//   window.addEventListener("load", () => {
+//     setTimeout(() => {
+//       document.getElementById("loader").style.display = "none";
+//       document.getElementById("content").style.display = "block";
+//     }, 1000);
+//   });
  const categorySelect = document.querySelector(".cat");
 
   function resizeSelect() {
