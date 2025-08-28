@@ -505,22 +505,34 @@ footer {
 
 @media screen and (max-width: 700px) {
   .logo{
-    height: 70%;
+    height: 100%;
     width: 15%;
     position: absolute;
     left: 0%;
-    top: 15%;
+    top: 30%;
+    left: 2%;
+  }
+  .spacer{
+    height: 8vh;
+  }
+  .b1,.b2,.b3,.b4{
+    height: 22vh;
+    width: 100vw;
+    margin-top: 2vh;
+    background-size: cover;
   }
   .navbar {
     height: 8vh;
     padding: 10px;
+    width: 100vw;
   }
   .logo1 {
     margin-bottom: 10px;
   }
   .search {
-    width: 60%;
+    width: 50%;
     display: flex;
+    margin-left: -15%;
   }
   .cat {
     width: 25%;
@@ -539,18 +551,75 @@ footer {
     display: none;
   }
   .cart {
-    align-self: flex-end;
     position: absolute;
     right: 0;
-    top: 35%;
+    top: 40%;
   }
-  .nav2ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+  .nav2{
+    display: none;
+  }
+  *{
+    overflow-x: none;
+  }
+  .box{
+    width: 75vw;
+  }
+  .onerow,.tworow{
+    flex-direction: column;
+  }
+  .d1,.d2,.d3,.d4{
+    top: 29vh;
+  }
+  .d1{
+    left:38vw;
+  }
+  .d2{
+    left: 44vw;
+  }
+  .d3{
+    left: 50vw;
+  }
+  .d4{
+    left: 56vw;
+  }
+  .b1{
+    background-image: url(./assets/b11.jpg);
+  }
+  .b2{
+    background-image: url(./assets/b21.jpg);
+  }
+  .b3{
+    background-image: url(./assets/b31.jpg);
+  }
+  .b4{
+    background-image: url(./assets/b41.jpg);
   }
 }
 @media screen and (min-width: 701px) and (max-width: 1000px) {
+  .logo{
+    height: 100%;
+    width: 15%;
+    position: absolute;
+    left: 0%;
+  }
+  .d1{
+    left:45vw;
+  }
+  .d2{
+    left: 48vw;
+  }
+  .d3{
+    left: 51vw;
+  }
+  .d4{
+    left: 54vw;
+  }
+  .nav2{
+    display: none;
+  }
+  .d1,.d2,.d3,.d4{
+    top: 30.5vh;
+  }
   .navbar {
     flex-wrap: wrap;
     height: auto;
@@ -558,8 +627,9 @@ footer {
   }
 
   .search {
-    width: 70%;
+    width: 50%;
     margin: 6px auto;
+    margin-left: 12%;
   }
 
   .cat {
@@ -574,7 +644,6 @@ footer {
     width: 15%;
   }
 
-  /* Hide a few less-important items */
   .location,
   .lang {
     display: none;
@@ -587,5 +656,25 @@ footer {
   .nav2ul {
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+  .b1,.b2,.b3,.b4{
+    height: 26vh;
+    width: 100vw;
+    background-size: cover;
+  }
+  .spacer{
+    height: 6.5vh;
+  }
+  .b1{
+    background-image: url(./assets/b11.jpg);
+  }
+  .b2{
+    background-image: url(./assets/b21.jpg);
+  }
+  .b3{
+    background-image: url(./assets/b31.jpg);
+  }
+  .b4{
+    background-image: url(./assets/b41.jpg);
   }
 }
