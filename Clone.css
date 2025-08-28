@@ -284,19 +284,19 @@
     height: 45vh;
 }
 .b1{
-    background-image: url(1.jpg);
+    background-image: url(./assets/1.jpg);
     background-size: 100vw 100vh;
 }
 .b2{
-    background-image: url(2.jpg);
+    background-image: url(./assets/2.jpg);
     background-size: 100vw 100vh;
 }
 .b3{
-    background-image: url(3.jpg);
+    background-image: url(./assets/3.jpg);
     background-size: 100vw 100vh;
 }
 .b4{
-    background-image: url(4.jpg);
+    background-image: url(./assets/4.jpg);
     background-size: 100vw 100vh;
 }
 .banner-wrapper{
